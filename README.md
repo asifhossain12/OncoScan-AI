@@ -69,12 +69,17 @@ Trained on the [BraTS 2020 Dataset](https://www.med.upenn.edu/cbica/brats2020/da
 5. **Resizing:**  
    Resize all slices to uniform spatial dimensions (e.g., 240×240).
 
+   ![Tumor Sample](6.JPG)
+
 ---
 
 ## 🧱 Model Architecture
 
 **Residual U-Net** combines the U-Net encoder-decoder structure with **residual blocks** to improve gradient flow and feature reuse.  
 Skip connections preserve spatial resolution and fine features crucial for medical segmentation.
+
+![Tumor Sample](4.JPG)
+![Tumor Sample](5.JPG)
 
 📌 *Block Overview:*
 
@@ -93,6 +98,11 @@ Skip connections preserve spatial resolution and fine features crucial for medic
 - MRI modalities: **T1**, **T1ce**, **T2**, **FLAIR**
 - Voxel-wise labels: 0 = Background, 1 = Necrosis, 2 = Edema, 4 = Enhancing Tumor
 - All images registered to 240×240×155 with 1mm³ resolution
+
+![Tumor Sample](1.JPG)
+![Tumor Sample](2.JPG)
+![Tumor Sample](3.JPG)
+
 
 ---
 
@@ -113,14 +123,9 @@ Skip connections preserve spatial resolution and fine features crucial for medic
 
 ---
 
-## 📷 Sample Outputs
+## 📷 Evaluation Graphs
 
-> *Before and after segmentation using ResUNet.*
-
-<p align="center">
-  <img src="results/sample_ET_prediction.png" width="320"/>
-  <img src="results/sample_WT_prediction.png" width="320"/>
-</p>
+![Tumor Sample](7.JPG)
 
 ---
 
